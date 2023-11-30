@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:ellipsize="end"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_clear"
+                android:text="AC"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_start_bracket"
+                android:text="("
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_end_bracket"
+                android:text=")"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_slash"
+                android:text="/"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_7"
+                android:text="7"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_8"
+                android:text="8"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_9"
+                android:text="9"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_multiply"
+                android:text="*"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_4"
+                android:text="4"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_5"
+                android:text="5"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_6"
+                android:text="6"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_plus"
+                android:text="+"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_1"
+                android:text="1"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_2"
+                android:text="2"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_3"
+                android:text="3"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_minus"
+                android:text="-"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_dot"
+                android:text="."
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/NumberButton"
+                android:id="@+id/btn_0"
+                android:text="0"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_back"
+                android:text="Back"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_equals"
+                android:text="="
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_x"
+                android:text="x"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_y"
+                android:text="y"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_z"
+                android:text="z"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_ln"
+                android:text="ln"
+                android:layout_width="wrap_content" />
+            <TextView
+                style="@style/ActionButton"
+                android:id="@+id/btn_sqrt"
+                android:text="sqrt"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <EditText
+                style="@style/ActionButton"
+                android:id="@+id/x"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter X value"
+                android:inputType="numberDecimal" />
+            <EditText
+                style="@style/ActionButton"
+                android:id="@+id/y"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter Y value"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                style="@style/ActionButton"
+                android:id="@+id/z"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter Z value"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
